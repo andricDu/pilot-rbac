@@ -1,0 +1,12 @@
+spring:
+  application:
+   name: rbac-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rbac_db
+    username: postgres
+    password: abc123
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+    locations: classpath:db/migrations
+    baseline-on-migrate: true
